@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Providers } from 'tada/providers'
 
 export const metadata: Metadata = {
   title: 'Get it Together',
@@ -11,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning={}>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
