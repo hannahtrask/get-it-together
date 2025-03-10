@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import {Box, Heading} from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div>
-      <main>Get it together, Han</main>
+    <Box style={{ padding: '2rem' }}>
+      <Heading>Get it together, Han</Heading>
       <footer>
         <a
           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -21,6 +22,6 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
-    </div>
+    </Box>
   )
 }
