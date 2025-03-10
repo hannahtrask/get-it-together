@@ -20,7 +20,6 @@ const config: ThemeConfig = {
 const buttonStyles = defineStyleConfig({
   baseStyle: {
     fontWeight: 'bold',
-    borderRadius: 'md',
     _focus: {
       boxShadow: 'outline',
     },
@@ -84,13 +83,17 @@ const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-        backgroundImage: "url('/sapan-patel-i9Q9bc-WgfE-unsplash.jpg')",
-        backgroundPosition: 'bottom center',
-        backgroundSize: 'cover',
+        backgroundColor: gentleColors.gentlePurple,
         color: gentleColors.gentleBlue,
         fontFamily: "'Roboto', sans-serif",
         lineHeight: '1.6',
         minHeight: '100vh',
+        height: '100%',
+        width: '100%',
+      },
+      '#__next': {
+        height: '100%',
+        width: '100%',
       },
       h1: {
         color: gentleColors.gentleOrange,
@@ -170,7 +173,7 @@ const theme = extendTheme({
       baseStyle: {
         borderColor: gentleColors.gentlePurple,
         borderWidth: '2px',
-        borderRadius: '5px',
+        borderRadius: '50%',
         boxShadow: 'md',
         padding: '4rem',
       },
