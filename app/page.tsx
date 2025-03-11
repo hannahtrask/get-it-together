@@ -1,5 +1,6 @@
 import { Box, Card, Image } from '@chakra-ui/react'
 import { Calendar } from 'tada/components/Calendar'
+import { TaskList } from 'tada/components/TaskList'
 
 export default function Home() {
   return (
@@ -19,21 +20,16 @@ export default function Home() {
         </Box>
         <Box style={{ display: 'flex', flexDirection: 'column' }}>
           {/* todo make this into the task list */}
+          <TaskList />
           <Card
             style={{
-              border: '1px solid black',
+              backgroundImage:
+                'url(/wolfgang-hasselmann-XK4BU0ggzhk-unsplash.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'bottom center',
               margin: '1rem',
-              height: '10rem',
-              width: '10rem',
-            }}
-          ></Card>
-          {/* todo make this a picture for now */}
-          <Card
-            style={{
-              border: '1px solid black',
-              margin: '1rem',
-              height: '10rem',
-              width: '10rem',
+              height: '28rem',
+              width: '33rem',
             }}
           ></Card>
         </Box>

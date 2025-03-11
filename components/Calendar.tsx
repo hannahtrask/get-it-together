@@ -8,8 +8,8 @@ export const Calendar = () => {
       {/* todo this will be the calendar */}
       <Card
         style={{
-          border: '1px solid black',
-          backgroundColor: 'black',
+          backgroundImage: 'url(/wolfgang-hasselmann-RQ6M0GTjpvM-unsplash.jpg)',
+          backgroundSize: 'cover',
           height: '40rem',
           padding: '1rem',
         }}

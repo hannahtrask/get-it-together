@@ -5,7 +5,7 @@ const gentleColors = {
   gentleSage: '#B2BEB5',
   gentleOrange: '#FFA07A',
   gentlePink: '#FFB6C1',
-  gentlePurple: '#D8BFD8',
+  gentlePurple: '#bea1d3',
   gentleBlue: '#ADD8E6',
   gentleSky: '#F0F8FF',
   gentlePeach: '#FFDAB9',
