@@ -85,54 +85,28 @@ const theme = extendTheme({
       'html, body': {
         backgroundColor: gentleColors.gentlePurple,
         color: gentleColors.gentleBlue,
-        fontFamily: "'Roboto', sans-serif",
-        lineHeight: '1.6',
-        minHeight: '100vh',
-        height: '100%',
-        width: '100%',
-      },
-      '#__next': {
-        height: '100%',
-        width: '100%',
-      },
-      h1: {
-        color: gentleColors.gentleOrange,
-        fontSize: '3xl',
-        fontWeight: 'bold',
-        marginBottom: '1rem',
-      },
-      h2: {
-        color: gentleColors.gentleSky,
-        fontSize: '2xl',
-        fontWeight: 'semibold',
-        marginBottom: '1rem',
-      },
-      h3: {
-        color: gentleColors.gentlePeach,
-        fontSize: 'xl',
-        fontWeight: 'semibold',
-        marginBottom: '1rem',
-      },
-      h4: {
-        color: gentleColors.gentleSky,
-      },
-      p: {
-        color: gentleColors.gentlePurple,
-        fontSize: 'md',
-        marginBottom: '1rem',
-      },
-      a: {
-        color: gentleColors.gentleBlue,
-        textDecoration: 'underline',
-        _hover: {
-          textDecoration: 'none',
-          color: gentleColors.gentleRed,
-        },
       },
     },
   },
   components: {
     Button: buttonStyles,
+    Checkbox: {
+      baseStyle: {
+        control: {
+          borderColor: gentleColors.gentlePink,
+          _checked: {
+            bg: gentleColors.gentlePink,
+            borderColor: gentleColors.gentlePink,
+          },
+          _hover: {
+            borderColor: gentleColors.gentleOrange,
+          },
+        },
+      },
+      defaultProps: {
+        colorScheme: 'pink', // Default color scheme
+      },
+    },
     Input: {
       baseStyle: {
         field: {
@@ -143,34 +117,26 @@ const theme = extendTheme({
           },
           _focus: {
             borderColor: gentleColors.gentleSage,
-            boxShadow: '0 0 0 1px #B2BEB5',
+            boxShadow: `0 0 0 1px ${gentleColors.gentleSage}`,
           },
         },
       },
     },
-    Textarea: {
+    IconButton: {
       baseStyle: {
-        borderColor: gentleColors.gentlePink,
-        _focus: {
-          borderColor: gentleColors.gentleSage,
-          boxShadow: '0 0 0 1px #B2BEB5',
+        bg: gentleColors.gentlePink,
+        color: 'white',
+        _hover: {
+          bg: gentleColors.gentleOrange,
         },
-      },
-    },
-    Badge: {
-      variants: {
-        subtle: {
-          bg: gentleColors.gentlePeach,
-          color: gentleColors.gentleBlue,
-        },
-        solid: {
+        _active: {
           bg: gentleColors.gentleSage,
-          color: 'white',
         },
       },
     },
     Card: {
       baseStyle: {
+        bg: gentleColors.gentleSky,
         borderColor: gentleColors.gentlePurple,
         borderWidth: '2px',
         borderRadius: '50%',

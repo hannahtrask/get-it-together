@@ -1,4 +1,4 @@
-import { Box, Card, Image } from '@chakra-ui/react'
+import { Box, Card, Heading } from '@chakra-ui/react'
 import { Calendar } from 'tada/components/Calendar'
 import { TaskList } from 'tada/components/TaskList'
 
@@ -9,11 +9,9 @@ export default function Home() {
         margin: '2rem 2rem 0 2rem',
       }}
     >
-      <Image
-        src="/d.png"
-        alt="ducks planner"
-        style={{ height: '125px', width: '150px' }}
-      />
+      <Heading as="h2" style={{ padding: '2rem 2rem 1rem 2rem' }}>
+        get it together, han
+      </Heading>
       <Box style={{ display: 'flex', flexDirection: 'row' }}>
         <Box style={{ width: '50%', padding: '0 2rem 2rem 2rem' }}>
           <Calendar />
