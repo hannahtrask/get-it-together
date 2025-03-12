@@ -103,11 +103,11 @@ export const TaskList = () => {
           ))}
         </List>
         <Input
-          placeholder="Add something to your todo list!"
+          placeholder="hey cutie, add something to your list"
           value={newToDo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <Button onClick={addTodo}>Add To Do</Button>
+        <Button onClick={addTodo}>okey let&apos;s do it</Button>
       </VStack>
     </Card>
   )

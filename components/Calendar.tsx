@@ -1,11 +1,18 @@
 'use client'
 
 import { Card } from '@chakra-ui/react'
+import Calendar from 'react-calendar'
+import { useState } from 'react'
 
-export const Calendar = () => {
+export const ToDoCalendar = () => {
+  const [value, setValue] = useState<Date>(new Date())
+
+  const onChange = (nextValue: Date) => {
+    setValue(nextValue)
+  }
+
   return (
     <>
-      {/* todo this will be the calendar */}
       <Card
         style={{
           backgroundImage: 'url(/wolfgang-hasselmann-RQ6M0GTjpvM-unsplash.jpg)',
@@ -13,7 +20,9 @@ export const Calendar = () => {
           height: '40rem',
           padding: '1rem',
         }}
-      ></Card>
+      >
+        <Calendar onChange={onChange} value={value as Date} />
+      </Card>
     </>
   )
 }
