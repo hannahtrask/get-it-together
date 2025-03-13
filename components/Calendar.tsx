@@ -4,12 +4,7 @@ import Calendar from 'react-calendar'
 import { Card } from '@chakra-ui/react'
 import './calendar.css'
 
-interface CalendarProps {
-  setDate: Date
-  date: Date
-  selectRange: boolean
-}
-export const ToDoCalendar = ({ setDate, date, selectRange }: CalendarProps) => {
+export const ToDoCalendar = () => {
   return (
     <Card
       style={{
@@ -19,7 +14,7 @@ export const ToDoCalendar = ({ setDate, date, selectRange }: CalendarProps) => {
         padding: '1rem',
       }}
     >
-      <Calendar onChange={setDate} value={date} selectRange={selectRange} />
+      <Calendar />
     </Card>
   )
 }
