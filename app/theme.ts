@@ -2,10 +2,10 @@ import { extendTheme, ThemeConfig, defineStyleConfig } from '@chakra-ui/react'
 import { fonts } from 'tada/app/fonts'
 
 const gentleColors = {
-  gentleSage: '#B2BEB5',
+  gentleSage: '#4b6551',
   gentleOrange: '#FFA07A',
   gentlePink: '#FFB6C1',
-  gentlePurple: '#bea1d3',
+  gentlePurple: '#ccb1e3',
   gentleBlue: '#ADD8E6',
   gentleSky: '#F0F8FF',
   gentlePeach: '#FFDAB9',
@@ -160,7 +160,7 @@ const theme = extendTheme({
         },
         h2: {
           fontSize: '2xl',
-          color: gentleColors.gentleSky,
+          color: gentleColors.gentleSage,
         },
         h3: {
           fontSize: 'xl',

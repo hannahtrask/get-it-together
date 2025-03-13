@@ -2,12 +2,12 @@
 
 import { Card } from '@chakra-ui/react'
 import Calendar from 'react-calendar'
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 
 export const ToDoCalendar = () => {
   const [value, setValue] = useState<Date>(new Date())
 
-  const onChange = (nextValue: Date) => {
+  const onChange = (nextValue: SetStateAction<Date>) => {
     setValue(nextValue)
   }
 
@@ -15,13 +15,13 @@ export const ToDoCalendar = () => {
     <>
       <Card
         style={{
-          backgroundImage: 'url(/wolfgang-hasselmann-RQ6M0GTjpvM-unsplash.jpg)',
+          backgroundImage: 'url(/tianying-xu-eNqQJbYcvdg-unsplash.jpg)',
           backgroundSize: 'cover',
           height: '40rem',
           padding: '1rem',
         }}
       >
-        <Calendar onChange={onChange} value={value as Date} />
+        <Calendar onChange={onChange as () => void} value={value as Date} />
       </Card>
     </>
   )

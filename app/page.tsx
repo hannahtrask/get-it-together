@@ -1,6 +1,7 @@
-import { Box, Card, Heading } from '@chakra-ui/react'
+import { Box, Card } from '@chakra-ui/react'
 import { TaskList } from 'tada/components/TaskList'
 import { ToDoCalendar } from 'tada/components/Calendar'
+import { Navigation } from 'tada/components/Navigation'
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
         margin: '2rem 2rem 0 2rem',
       }}
     >
-      <Heading as="h2" style={{ padding: '2rem 2rem 1rem 2rem' }}>
-        get it together, han
-      </Heading>
+      <Navigation />
       <Box style={{ display: 'flex', flexDirection: 'row' }}>
         <Box style={{ width: '50%', padding: '0 2rem 2rem 2rem' }}>
           <ToDoCalendar />
@@ -20,8 +19,7 @@ export default function Home() {
           <TaskList />
           <Card
             style={{
-              backgroundImage:
-                'url(/wolfgang-hasselmann-XK4BU0ggzhk-unsplash.jpg)',
+              backgroundImage: 'url(/annie-spratt-YNjqOIYpCaU-unsplash.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom center',
               margin: '1rem',
