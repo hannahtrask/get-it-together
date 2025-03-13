@@ -82,6 +82,16 @@ const theme = extendTheme({
   },
   styles: {
     global: {
+      ':root': {
+        '--chakra-colors-gentleSage': gentleColors.gentleSage,
+        '--chakra-colors-gentleOrange': gentleColors.gentleOrange,
+        '--chakra-colors-gentlePink': gentleColors.gentlePink,
+        '--chakra-colors-gentlePurple': gentleColors.gentlePurple,
+        '--chakra-colors-gentleBlue': gentleColors.gentleBlue,
+        '--chakra-colors-gentleSky': gentleColors.gentleSky,
+        '--chakra-colors-gentlePeach': gentleColors.gentlePeach,
+        '--chakra-colors-gentleRed': gentleColors.gentleRed,
+      },
       'html, body': {
         backgroundColor: gentleColors.gentlePurple,
         color: gentleColors.gentleBlue,
